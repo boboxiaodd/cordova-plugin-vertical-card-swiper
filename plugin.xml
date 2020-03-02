@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-vertical-card-swiper"
+        version="0.0.1">
+    <name>CDVVerticalCardSwiper</name>
+
+    <js-module name="CDVVerticalCardSwiper" src="www/CDVVerticalCardSwiper.js">
+        <clobbers target="CDVVerticalCardSwiper" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CDVVerticalCardSwiper">
+                <param name="ios-package" value="CDVVerticalCardSwiper" />
+            </feature>
+        </config-file>
+        <!-- Add in the plugin .swift files here -->
+        <source-file src="src/ios/CDVVerticalCardSwiper.swift" />
+
+        <dependency id="cordova-plugin-add-swift-support" />
+        <pods-config ios-min-version="11.0" use-frameworks="true" />
+        <pod name="VerticalCardSwiper" spec="" />
+    </platform>
+</plugin>

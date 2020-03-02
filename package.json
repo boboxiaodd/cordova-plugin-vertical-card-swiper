@@ -1,0 +1,24 @@
+{
+  "name": "cordova-plugin-vertical-card-swiper",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boboxiaodd/cordova-plugin-vertical-card-swiper"
+  },
+  "description": "Use VerticalCardSwiper(Swift) for ios",
+  "cordova": {
+    "id": "cordova-plugin-vertical-card-swiper",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "VerticalCardSwiper",
+    "Tinder",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "BoBo",
+  "license": "MIT"
+}
